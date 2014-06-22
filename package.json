@@ -1,0 +1,11 @@
+{
+  "name": "yeti-syntax",
+  "theme": "syntax",
+  "version": "0.1",
+  "description": "Yeti Syntax - A subtle light colored theme for Atom.",
+  "repository": "https://github.com/jesseweed/yeti-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.100.0"
+  }
+}
