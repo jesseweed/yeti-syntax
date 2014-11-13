@@ -1,13 +1,13 @@
 @import "./stylesheets/colors.less";
 
 // EDITOR BACKGROUND & FONT COLORS
-.editor-colors {
+.editor-colors, :host {
   background-color: @code-background;
   color: @code-font-color;
 }
 
 // MAIN CODE EDITOR STYLES
-.editor {
+.editor, :host {
 
   background-color: @code-background;
   color: @code-font-color;
@@ -107,13 +107,15 @@
 }
 
 // HIGHLIGHT STYLE FOR SEARCH MATCHES
-.editor .search-results .marker .region {
+.editor .search-results .marker .region,
+:host .search-results .marker .region {
   background-color: @search-bg;
   border: @search-border;
 }
 
 // HIGHLIGHT STYLE FOR CURRENTLY SELECTED SEARCH RESULT
-.editor .search-results .marker.current-result .region {
+.editor .search-results .marker.current-result .region,
+:host .search-results .marker.current-result .region {
   background-color: @search-active-bg;
   border: @search-active-border;
 }
@@ -561,7 +563,8 @@
   }
 }
 
-.editor.mini .scroll-view {
+.editor.mini .scroll-view,
+:host .scroll-view {
   padding-left: 1px;
 }
 
